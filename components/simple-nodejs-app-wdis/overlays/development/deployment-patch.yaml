@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-wdis
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-oejo-tenant/nodejs-users/simple-nodejs-app-wdis@sha256:16f7a4a7caca0ab2ad49fb9c7d8520d0b86335f7803253ef84bd9098efa944ae
+        name: my-nodejs
+        resources: {}
+status: {}
